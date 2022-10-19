@@ -1,0 +1,32 @@
+.map_container {
+    height: relative;
+    /* width: 100vw; */
+
+    align: center;
+}
+
+.map_container_iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.map_container_iframe {
+    height: 100%;
+    width: 100vw;
+}
+
+.directions_container {
+    margin: 3rem;
+
+    display: flex;
+}
+
+.list_container {
+    font-family: 'Cedarville Cursive';
+    font-size:x-large;
+}
+
+@media only screen and (max-width: 600px) {
+    .list_container {
+        font-size:large;
+    }    
+}
