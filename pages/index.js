@@ -4,6 +4,10 @@ import Link from 'next/link';
 
 import React from "react";
 
+import Map from "../components/map";
+import Scbtn from "../components/scroll_to_top";
+import Invitation from "../components/invitation";
+
 export default function Home(props) {
 	return (
 		<>
@@ -11,10 +15,11 @@ export default function Home(props) {
 				<title>Home</title>
 			</Head>
 			<main>
-				<Link href="/map">
-					<a>SEE MAP</a>
-				</Link>
+				{/* invitation here */}
+				<Invitation/>
+				<Map/>
 			</main>
+			<Scbtn/>
 		</>	
 	)
 }

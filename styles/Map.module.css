@@ -1,8 +1,5 @@
 .map_container {
-    height: relative;
-    /* width: 100vw; */
-
-    align: center;
+    /* height: relative; */
 }
 
 .map_container_iframe::-webkit-scrollbar {
@@ -12,6 +9,16 @@
 .map_container_iframe {
     height: 100%;
     width: 100vw;
+
+	filter: grayscale(0) opacity(0.9);
+	transition: var(--transition-speed) ease;
+}
+
+.map_container_iframe:hover {
+	transition: var(--transition-speed) ease;
+
+	filter: grayscale(0) opacity(0.5);
+	filter: grayscale(0) opacity(1);
 }
 
 .directions_container {

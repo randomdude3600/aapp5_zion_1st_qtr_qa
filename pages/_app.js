@@ -2,15 +2,18 @@ import '../styles/globals.css';
 
 import React from "react";
 
+import Footer from '../components/footer';
+import Nav from '../components/nav';
+
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-			<header>
-				<div>Map of Cebu</div>
-			</header>
-			<div>
-				<Component {...pageProps} />
-			</div>
+			<false_body></false_body>
+				<Nav/>
+				<article>
+					<Component {...pageProps} />
+				</article>
+			<Footer/>
 		</>
 	)
 }

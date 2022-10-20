@@ -1,0 +1,54 @@
+.invitation_container {
+    display: flex;
+    justify-content: center;
+    
+    width: 100vw;
+    
+    padding-top: 10%;
+}
+
+.invitation {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    font-family: 'NinjaNaruto';
+
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    padding: 2rem;
+
+	transition: var(--transition-speed);
+
+    border-radius: 1rem;
+}
+
+.invitation h1 {
+    font-size: 2.5rem;
+}
+
+.power {
+    border-radius: 100%;
+    width: 50%;
+    
+    filter: opacity(0.8);
+    transition: var(--transition-speed) ease-out;
+}
+
+.power:hover {
+    transition: var(--transition-speed) ease-in;
+
+    filter: opacity(1);
+}
+
+@media only screen and (max-width: 600px) {
+	.invitation h1 {
+        font-size: 1.5rem;
+    }
+    .power {
+        width: 80%;
+    }
+}
